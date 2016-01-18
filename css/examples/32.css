@@ -1,0 +1,41 @@
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.child {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.child:nth-child(6), .child:nth-child(7) {
+    display: none;
+}
+
+@media all and (min-width: 800px) {
+    .child:nth-child(3), .child:nth-child(4) {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .child:nth-child(2) {
+        flex-grow: 3;
+        flex-basis: auto;
+        order: 2;
+    }
+
+    .child:nth-child(3) {
+        order: 1;
+    }
+
+    .child:nth-child(4) {
+        order: 3;
+    }
+
+    .child:nth-child(5) {
+        order: 4;
+    }
+}
+

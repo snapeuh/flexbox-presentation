@@ -1,0 +1,130 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+}
+
+button, select {
+	background: #ecf0f1;
+	color: #2c3e50;
+	border: none;
+	font-size: 14px;
+	padding: 8px 20px;
+	border-radius: 4px;
+	outline: none;
+	transition: all linear .2s;
+}
+
+button:hover {
+	background: #3498db;
+	color: #fff;
+}
+
+select {
+	background: #ecf0f1;
+	height: 30px;
+	color: #2c3e50;
+	width: 250px;
+}
+
+.topbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	height: 50px;
+}
+
+.example {
+	width: 75%;
+	margin: auto;
+}
+
+.example.mobile {
+	width: 375px;
+}
+
+.example.desktop {
+	width: 90%;
+}
+
+.example pre {
+	margin: 0px;
+	margin-bottom: 10px;
+	max-height: 350px;
+}
+
+.parent {
+	background: #34495e;
+	padding: 10px;
+	display: flex;
+}
+
+.child {
+	padding: 10px;
+	color: #fff;
+	overflow: hidden;
+}
+
+.child:nth-child(1){
+	background: #e74c3c;
+}
+
+.child:nth-child(1):before {
+	content: '1.\00a0 Red';
+}
+
+.child:nth-child(2){
+	background: #3498db;
+}
+
+.child:nth-child(2):before {
+	content: '2.\00a0 Blue';
+}
+
+.child:nth-child(3){
+	background: #f1c40f;
+}
+
+.child:nth-child(3):before {
+	content: '3.\00a0 Yellow';
+}
+
+.child:nth-child(4){
+	background: #1abc9c;
+}
+
+.child:nth-child(4):before {
+	content: '4.\00a0 Turquoise';
+}
+
+.child:nth-child(5){
+	background: #e67e22;
+}
+
+.child:nth-child(5):before {
+	content: '5.\00a0 Orange';
+}
+
+.child:nth-child(6){
+	background: #9b59b6;
+}
+
+.child:nth-child(6):before {
+	content: '6.\00a0 Purple';
+}
+
+.child:nth-child(7){
+	background: #95a5a6;
+}
+
+.child:nth-child(7):before {
+	content: '7.\00a0 Grey';
+}
+

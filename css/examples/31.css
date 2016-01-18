@@ -1,0 +1,13 @@
+.parent {
+    display: flex;
+    height: 200px;
+}
+
+.child {
+    display: none;
+}
+
+.child:nth-child(3) {
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,9 @@
+.parent {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    
+    /* Shorthand to
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    */
+}

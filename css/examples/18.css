@@ -1,0 +1,11 @@
+.parent {
+    display: flex;
+}
+
+.child:nth-child(2){
+    flex-grow: 1;
+}
+
+.child:nth-child(4){
+    flex-grow: 2;
+}

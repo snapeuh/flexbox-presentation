@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Flexbox</title>
+
+        <!-- CSS -->
+        <link href="css/normalize.min.css" rel="stylesheet">
+        <link href="css/highlight/github-gist.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        
+        <style id="inline-css"></style>
+    </head>
+
+    <body>
+        <div class="topbar">
+            <div class="controls">
+                <button class="previous" href="javascript:;">Previous</button>
+                <button class="next" href="javascript:;">Next</button>
+            </div>
+
+            <div class="index">
+            </div>
+
+            <div class="screen-size">
+                <button class="mobile" href="javascript:;">Mobile</button>
+                <button class="desktop" href="javascript:;">Desktop</button>
+            </div>
+        </div>
+
+        <div class="example">
+            <pre><code class="highlight css"></code></pre>
+
+            <div class="parent">
+                <div class="child"></div>
+                <div class="child"></div>
+                <div class="child"></div>
+                <div class="child"></div>
+                <div class="child"></div>
+                <div class="child"></div>
+                <div class="child"></div>
+            </div>
+        </div>
+
+        <script src="js/zepto.min.js"></script>
+        <script src="js/highlight.min.js"></script>
+
+        <script>
+            (function(){
+                var index = 1;
+                var examples = 32;
+
+                var select = '<select>';
+                for (var i = 1; i <= examples; i++){
+                    select += '<option value="' + i + '">Example ' + i + '</option>';
+                }
+                select += '</select>';
+
+                $('.index').html(select);
+
+                $('.index select').on('change', function(e){
+                    index = $(this).val();
+                    displayExample();
+                });
+
+                displayExample();
+
+                $('.next').click(function(){
+                    index++;
+                    if (index > examples)
+                        index = 1;
+                    $('.index select').val(index);
+                    displayExample();
+                });
+
+                $('.previous').click(function(){
+                    index--;
+                    if (index < 1){
+                        index = examples;
+                    }
+                    $('.index select').val(index);
+                    displayExample();
+                });
+
+                function displayExample(){
+                    $.get('css/examples/' + index + '.css', function(data){
+                        $('#inline-css').html(data);
+                        $('.highlight').html(data);
+
+                        $('.highlight').each(function(i, block){
+                            hljs.highlightBlock(block);
+                        });
+                    });
+                }
+
+                $('.mobile').click(function(){
+                    $('.example').removeClass('desktop');
+                    $('.example').toggleClass('mobile');
+                });
+
+                $('.desktop').click(function(){
+                    $('.example').removeClass('mobile');
+                    $('.example').toggleClass('desktop');
+                });
+
+                $(window).on('keyup', function(e){
+                    console.log(e.keyCode);
+                    if (e.keyCode == 37){
+                        $('.previous').click();
+                    }
+                    if (e.keyCode == 39){
+                        $('.next').click();
+                    }
+                    if (e.keyCode == 77){
+                        $('.mobile').click();
+                    }
+                    if (e.keyCode == 68){
+                        $('.desktop').click();
+                    }
+                    if (e.keyCode == 82){
+                        displayExample();
+                    }
+                    e.preventDefault();
+                });
+            })();
+        </script>
+    </body>
+</html>

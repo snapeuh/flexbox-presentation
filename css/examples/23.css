@@ -1,0 +1,7 @@
+.parent {
+    display: flex;
+}
+
+.child {
+    flex-basis: 80px; /* 10px padding so 100px wide */
+}

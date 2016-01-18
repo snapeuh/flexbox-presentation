@@ -1,0 +1,8 @@
+.parent {
+    width: 50%;
+    display: flex;
+}
+
+.child {
+    /* flex-shrink: 1; */
+}

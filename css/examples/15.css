@@ -1,0 +1,5 @@
+.parent {
+    display: flex;
+    height: 200px;
+    align-items: flex-end;
+}

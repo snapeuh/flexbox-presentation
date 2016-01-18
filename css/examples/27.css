@@ -1,0 +1,9 @@
+.parent {
+    display: flex;
+    height: 200px;
+    align-items: flex-end;
+}
+
+.child:nth-child(3) {
+    align-self: stretch;
+}
