@@ -19,3 +19,10 @@ Here's a list of available keyboard shortcuts :
 Please keep in mind that sometimes you have to resize your browser window to prove some effects (<code>flex-wrap</code> for example)
 
 The examples support is tailor-made for the presentation using Zepto and Flexbox.
+
+## References
+
+Here's some articles I used to create the presentation :
+
+* [What IS Flexbox?](http://spaceninja.com/2015/08/24/what-is-flexbox/) on Medium
+* [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) on CSS-Tricks
