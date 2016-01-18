@@ -8,7 +8,7 @@ The presentation is available on Google Slides (read-only) : https://goo.gl/oD7x
 
 The examples are live on GitHub Pages : http://snapeuh.github.io/flexbox-presentation/.
 
-Also, you can clone this repository and serve it. I use [johnpapa/lite-server](https://github.com/johnpapa/lite-server) to do that.
+Also, you can clone this repository and serve it. I use [lite-server](https://www.npmjs.com/package/lite-server) to do that.
 
 Here's a list of available keyboard shortcuts :
 
