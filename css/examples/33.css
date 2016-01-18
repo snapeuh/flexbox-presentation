@@ -1,0 +1,14 @@
+.parent {
+    display: flex;
+}
+
+.child {
+    cursor: pointer;
+    flex-grow: 1;
+    transition: flex-grow linear .2s;
+}
+
+.child:hover {
+    flex-grow: 2;
+}
+
