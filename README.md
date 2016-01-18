@@ -2,7 +2,7 @@
 
 ## Presentation
 
-The presentation is available on Google Slides (read-only) : https://goo.gl/oD7xzY. It features comments so you know which examples are linked to the slide.
+The presentation is available on Google Slides (read-only) : https://goo.gl/oD7xzY. It features comments so you know which examples are used in a slide.
 
 ## Examples
 
