@@ -24,11 +24,6 @@
 
             <div class="index">
             </div>
-
-            <div class="screen-size">
-                <button class="mobile" href="javascript:;">Mobile</button>
-                <button class="desktop" href="javascript:;">Desktop</button>
-            </div>
         </div>
 
         <div class="example">
@@ -96,16 +91,6 @@
                     });
                 }
 
-                $('.mobile').click(function(){
-                    $('.example').removeClass('desktop');
-                    $('.example').toggleClass('mobile');
-                });
-
-                $('.desktop').click(function(){
-                    $('.example').removeClass('mobile');
-                    $('.example').toggleClass('desktop');
-                });
-
                 $(window).on('keyup', function(e){
                     console.log(e.keyCode);
                     if (e.keyCode == 37){
@@ -113,12 +98,6 @@
                     }
                     if (e.keyCode == 39){
                         $('.next').click();
-                    }
-                    if (e.keyCode == 77){
-                        $('.mobile').click();
-                    }
-                    if (e.keyCode == 68){
-                        $('.desktop').click();
                     }
                     if (e.keyCode == 82){
                         displayExample();

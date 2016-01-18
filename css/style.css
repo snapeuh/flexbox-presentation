@@ -37,21 +37,14 @@ select {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
+	flex-wrap: wrap;
+	width: 75%;
 	height: 50px;
 }
 
 .example {
 	width: 75%;
 	margin: auto;
-}
-
-.example.mobile {
-	width: 375px;
-}
-
-.example.desktop {
-	width: 90%;
 }
 
 .example pre {

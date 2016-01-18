@@ -1,6 +1,6 @@
 .parent {
     display: flex;
-    height: 200px;
+    height: 175px;
 }
 
 .child:nth-child(3) {

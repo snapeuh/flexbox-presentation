@@ -16,4 +16,6 @@ Here's a list of available keyboard shortcuts :
 * Right arrow : Next example
 * R : Refresh current example (in case you want to hot refresh an example you edit for your viewers)
 
+Please keep in mind that sometimes you have to resize your browser window to prove some effects (<code>flex-wrap</code> for example)
+
 The examples support is tailor-made for the presentation using Zepto and Flexbox.
